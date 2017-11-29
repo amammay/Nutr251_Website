@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ClarityModule } from 'clarity-angular';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NutritionHomeComponent } from './nutrition-home/nutrition-home.component';
 import { NutritionFastFoodComponent } from './nutrition-home/nutrition-fast-food/nutrition-fast-food.component';
+import { NutritionService } from './nutrition-home/nutrition.service';
 
 @NgModule({
   declarations: [
@@ -18,9 +20,10 @@ import { NutritionFastFoodComponent } from './nutrition-home/nutrition-fast-food
     BrowserModule,
     BrowserAnimationsModule,
     ClarityModule.forRoot(),
-    ROUTING
+    ROUTING,
+    HttpModule
   ],
-  providers: [],
+  providers: [ NutritionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

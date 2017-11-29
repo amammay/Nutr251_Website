@@ -1,11 +1,11 @@
-<h3>
+<h1>
   Fast Food
-</h3>
+</h1>
 
 <div class="row flex-items-xs-middle">
 
   <div class="col-xs" *ngFor="let nutr of nutrGrp1">
-    <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center">
+    <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center" >
       <div class="card-media-img">
         <img src="{{ nutr.img }}" height="100" width="100">
       </div>

@@ -1,0 +1,16 @@
+{
+    "nutri": [
+        {
+            "title": "Taco Bell",
+            "img": "https://pbs.twimg.com/profile_images/918972315991384064/qwetpLdA_400x400.jpg",
+            "foodItems": [
+                {
+                    "name": "Fresco Tacos",
+                    "calories": "140",
+                    "addInfo": "Steak or chicken, crunchy or soft, all the same calorie count."
+                }
+            ] 
+           
+        }
+    ]
+}
