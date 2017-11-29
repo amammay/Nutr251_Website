@@ -16,15 +16,10 @@
       </router-outlet>
     </div>
     <clr-vertical-nav [clrVerticalNavCollapsible]="true" [clr-nav-level]="1" [(clrVerticalNavCollapsed)]="collapsed">
-      <clr-vertical-nav-group routerLinkActive="active">
-        <clr-icon shape="scroll" class="is-solid" clrVerticalNavIcon></clr-icon>
-        Nutrition
-        <clr-vertical-nav-group-children>
-          <a clrVerticalNavLink routerLink="./nutritionHome/nutritionFastFood" routerLinkActive="active">
-            Nutrition Fast Food
-          </a>
-        </clr-vertical-nav-group-children>
-      </clr-vertical-nav-group>
+        <a clrVerticalNavLink routerLinkActive="active" routerLink="./nutritionHome">
+          <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
+          Nutrition Home
+        </a>
       <a clrVerticalNavLink routerLinkActive="active" routerLink="./credit">
         <clr-icon shape="certificate" clrVerticalNavIcon></clr-icon>
         Credit

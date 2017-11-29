@@ -4,8 +4,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'nutritionFastFood', pathMatch: 'full' },
-  { path: 'nutritionFastFood', component: NutritionFastFoodComponent },
+  { path: '', redirectTo: 'nutritionHome', pathMatch: 'full' },
+  { path: 'nutritionFastFood/:id', component: NutritionFastFoodComponent },
 ];
 @NgModule({
   imports: [

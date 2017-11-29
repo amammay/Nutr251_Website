@@ -1,6 +1,57 @@
-<h1>
-  Nutrition 251 Tips
-</h1>
+<h3>
+  Fast Food
+</h3>
 
+<div class="row flex-items-xs-middle">
+
+  <div class="col-xs" *ngFor="let nutr of nutrGrp1">
+    <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center">
+      <div class="card-media-img">
+        <img src="{{ nutr.img }}" height="100" width="100">
+      </div>
+      <div class="card-block">
+        <p class="card-title">
+          {{nutr.title}}
+        </p>
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<!-- <div class="row flex-items-xs-middle">
+
+  <div class="col-xs" *ngFor="let nutr of nutrGrp2">
+    <a class="card clickable text-center">
+      <div class="card-media-img">
+        <img src="{{ nutr.img }}" height="100" width="100">
+      </div>
+      <div class="card-block">
+        <p class="card-title">
+          {{nutr.title}}
+        </p>
+
+      </div>
+    </a>
+  </div>
+
+</div>
+
+<div class="row flex-items-xs-middle">
+
+  <div class="col-xs" *ngFor="let nutr of nutrGrp3">
+    <a href="..." class="card clickable text-center">
+      <div class="card-media-img">
+        <img src="{{ nutr.img }}" height="100" width="100">
+      </div>
+      <div class="card-block">
+        <p class="card-title">
+          {{nutr.title}}
+        </p>
+      </div>
+    </a>
+  </div>
+
+</div> -->
 
 <router-outlet></router-outlet>
