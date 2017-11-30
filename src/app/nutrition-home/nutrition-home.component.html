@@ -1,11 +1,20 @@
 <h1>
   Fast Food
 </h1>
+<p class="wrap-text">
+  Just as a quick intro, there is so much conjecture in the weight loss cult of personality out there which rallies against
+  any form of fast food. While it is certainly true that you can pack on some massive calories at many fast food chains,
+  it’s certainly not inevitable with a little knowledge and planning. If anything, many fast food restaurants are becoming
+  more friendly to calorie counters, not less. Even the mighty Taco Bell (owned by Pepsi Co. consequently) now has a big
+  name nutritionist on full time staff making recommendations for menu changes. For the purposes of this guide, I will point
+  to menu items or combinations that are mostly 550 calories or less, making it possible to squeeze these meals in on most
+  any day and still be able to stay under your calorie goal.
+</p>
 
 <div class="row flex-items-xs-middle">
 
   <div class="col-xs" *ngFor="let nutr of nutrGrp1">
-    <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center" >
+    <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center">
       <div class="card-media-img">
         <img src="{{ nutr.img }}" height="100" width="100">
       </div>

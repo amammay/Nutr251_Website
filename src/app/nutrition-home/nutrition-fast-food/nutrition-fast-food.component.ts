@@ -13,7 +13,10 @@ export class NutritionFastFoodComponent implements OnInit {
   localNutritionObject: Nutrition;
 
   constructor(private route: ActivatedRoute, private location: Location, private nutrService: NutritionService) {
-    route.params.subscribe(params => { this.id = params['id']; this.localNutritionObject = this.nutrService.searchNutr(this.id); });
+    route.params.subscribe(params => {
+      this.id = params['id'];
+      this.localNutritionObject = this.nutrService.searchNutr(this.id);
+    });
 
   }
 

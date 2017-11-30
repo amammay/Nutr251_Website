@@ -1,6 +1,17 @@
 <h2>
-    hello {{ id }}
+    {{ id }}
 </h2>
 <p class="word-wrap">
-    {{localNutritionObject.desc}}
+    Extra Notes: {{localNutritionObject.desc }}
 </p>
+
+<ul class="list" *ngFor="let foods of localNutritionObject.fooditem">
+
+    <li>
+        {{ foods.name}}
+        <ul class="list">
+            <li>Calories: {{foods.cost}}</li>
+            <li>Notes: {{foods.extra}}</li>
+        </ul>
+    </li>
+</ul>

@@ -15,7 +15,7 @@ export class NutritionHomeComponent implements OnInit {
   constructor(private nutritionService: NutritionService) {
     this.nutritions = this.nutritionService.myListOfNutr();
 
-    // this.nutrGrp1 = this.nutritions.slice(0, 4);
+    this.nutrGrp1 = this.nutritions.slice(0, 5);
     // this.nutrGrp2 = this.nutritions.slice(4, 8);
     // this.nutrGrp3 = this.nutritions.slice(8, 12);
   }
