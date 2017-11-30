@@ -13,6 +13,7 @@ export class NutritionService {
     foodItemListChickFilA: FoodItem[];
     foodItemListWendys: FoodItem[];
     foodItemListSubway: FoodItem[];
+    foodItemListBistro: FoodItem[];
 
     constructor(private http: Http) {
         this.foodItemListTacoBell = [
@@ -45,9 +46,11 @@ export class NutritionService {
             new FoodItem('Tuna Salad Chopped salad', '360', 'Not including dressing, but good and filling'),
             new FoodItem('Double Chicken Chopped salad', '220', 'Also not including dressing but by far the most bang for your calorie buck to be had from Subway salads.')
         ];
-
-
-
+        this.foodItemListBistro = [
+            new FoodItem('Assorted meatless breakfast sandwiches', '350', 'Sort of filling, best breakfast option'),
+            new FoodItem('Grilled chicken sandwich', '312', 'Decent portion at a decent price'),
+            new FoodItem('Turkey Burger', '360', 'Good alternative to the chicken sandwich if you are not feeling chicken'),
+        ];
     }
 
     setNutr(myNutr) {
@@ -75,23 +78,19 @@ export class NutritionService {
                 'https://pbs.twimg.com/profile_images/905469122674393089/m49BKeBS_400x400.jpg',
                 '',
                 this.foodItemListWendys),
-
             new Nutrition(
                 'Subway',
                 'https://pbs.twimg.com/profile_images/763049278306652160/1AgT2EJt_400x400.jpg',
                 'Many sandwiches might be “healthy” but that does not matter if they are still riddled with calories. Still, Subway is easy to manage on a diet, and can easily be a “go to” for lunches. Also be aware this guide for Subway assumes you avoid mayo, dressings, and cheese. Most all cheeses at Subway tack on an extra 50-75 calories per 6 inch sub. I recommend you skip the mayos and dressings entirely. While there is not as much variation on calories with the bread as you might think, for the purposes of this guide I will assume wheat or 9 grain. It also assumes a typical “run it through the garden” arrangement as far as what you want on it. Double the count count below if you make it a foot long. Sorry for the long disclaimer, but this place has lots of options and precision can be tough.',
                 this.foodItemListSubway),
-            new Nutrition('McDonalds', 'https://pbs.twimg.com/profile_images/658746945565954048/Zrf2h3RD_400x400.jpg', ''),
-            new Nutrition('BroadHead Bistro', 'https://beavercampusliving.psu.edu/sites/beavercampusliving/files/brodhead_bistro_blue.jpg', ''),
+            new Nutrition('BroadHead Bistro',
+                'https://beavercampusliving.psu.edu/sites/beavercampusliving/files/brodhead_bistro_blue.jpg',
+                'Rule of thumb is to stay away from the fryer and grab and go foods. Your best bets will be the salad bar or the made to order. Just watch your dressings and you should be clear',
+                this.foodItemListBistro),
 
         ];
 
-
-
         return this.nutrList;
-
-
-
     }
 
     searchNutr(id: string) {

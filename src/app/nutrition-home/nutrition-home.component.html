@@ -10,10 +10,13 @@
   to menu items or combinations that are mostly 550 calories or less, making it possible to squeeze these meals in on most
   any day and still be able to stay under your calorie goal.
 </p>
+<h3>
+  To get started click on a card below!
+</h3>
 
 <div class="row flex-items-xs-middle">
 
-  <div class="col-xs" *ngFor="let nutr of nutrGrp1">
+  <div class="col-xs" *ngFor="let nutr of nutritions">
     <a [routerLink]="['nutritionFastFood', nutr.title]" class="card clickable text-center">
       <div class="card-media-img">
         <img src="{{ nutr.img }}" height="100" width="100">
@@ -27,40 +30,5 @@
   </div>
 
 </div>
-
-<!-- <div class="row flex-items-xs-middle">
-
-  <div class="col-xs" *ngFor="let nutr of nutrGrp2">
-    <a class="card clickable text-center">
-      <div class="card-media-img">
-        <img src="{{ nutr.img }}" height="100" width="100">
-      </div>
-      <div class="card-block">
-        <p class="card-title">
-          {{nutr.title}}
-        </p>
-
-      </div>
-    </a>
-  </div>
-
-</div>
-
-<div class="row flex-items-xs-middle">
-
-  <div class="col-xs" *ngFor="let nutr of nutrGrp3">
-    <a href="..." class="card clickable text-center">
-      <div class="card-media-img">
-        <img src="{{ nutr.img }}" height="100" width="100">
-      </div>
-      <div class="card-block">
-        <p class="card-title">
-          {{nutr.title}}
-        </p>
-      </div>
-    </a>
-  </div>
-
-</div> -->
 
 <router-outlet></router-outlet>
