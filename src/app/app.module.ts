@@ -10,13 +10,15 @@ import { NutritionHomeComponent } from './nutrition-home/nutrition-home.componen
 import { NutritionFastFoodComponent } from './nutrition-home/nutrition-fast-food/nutrition-fast-food.component';
 import { NutritionService } from './nutrition-home/nutrition.service';
 import { TipsComponent } from './tips/tips.component';
+import { SourcesComponent } from './sources/sources.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NutritionHomeComponent,
     NutritionFastFoodComponent,
-    TipsComponent
+    TipsComponent,
+    SourcesComponent
   ],
   imports: [
     BrowserModule,
