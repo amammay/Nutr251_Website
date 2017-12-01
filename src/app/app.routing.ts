@@ -4,7 +4,7 @@ import { routes as childRoutes, NutritionHomeModule } from './nutrition-home/nut
 import { ModuleWithProviders } from '@angular/core/src/metadata/ng_module';
 import { Routes, RouterModule } from '@angular/router';
 export const ROUTES: Routes = [
-    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: '', redirectTo: 'nutritionHome', pathMatch: 'full' },
     { path: 'nutritionHome', component: NutritionHomeComponent, children: childRoutes},
     { path: 'tips', component: TipsComponent}
 ];
