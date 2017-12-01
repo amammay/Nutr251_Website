@@ -7,7 +7,7 @@ import { Routes, RouterModule } from '@angular/router';
 export const ROUTES: Routes = [
     { path: '', redirectTo: 'nutritionHome', pathMatch: 'full' },
     { path: 'nutritionHome', component: NutritionHomeComponent, children: childRoutes},
-    { path: 'tips', component: TipsComponent}
+    { path: 'tips', component: TipsComponent},
     { path: 'sources', component: SourcesComponent}
 ];
 
